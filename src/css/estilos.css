@@ -1,66 +1,83 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+html{
+    background-color: #3055A6;
+}
+
+main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     height: 100vh;
 }
 
-.card-perguntas-frequentes{
-    display: flex;
-    background-color: #4F8EDB;
-    width: 800px;
-    height: 368px;
-    border-radius: 15px;
-    justify-content: space-around;
-}
-
-#imagem-faq{
+main .wiley{
+    width: 280px;
+    border-radius: 90%;
     position: relative;
-    width: 278px;
-    height: 293px;
-    left: -145px;
-    top: 45px;
-    margin-right: -50px;
+    left: -140px;
+    width: 40%;
 }
 
-.container-perguntas-frequentes{
+main .container{
+    display: flex;
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    position: absolute;
+    padding: 10px;
+    min-height: 380px;
+    max-width: 708px;
+    justify-content: flex-end;
+}
+
+main .container .conteudo{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
-.container-perguntas-frequentes .container-perguntas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    align-items: center;
-    background-color: #30508E;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.container-perguntas:hover{
-    cursor: pointer;
-    background-color: #304f8ecd;
-    transition: 0.4s ease;
-}
-
-.container-perguntas-frequentes .container-perguntas .seta-branca{
-    width: 15px;
-    height: 10px;
-    margin-left: 20px;
-    align
-}
-
-#titulo-perguntas-frequentes{
+main .container .conteudo .titulo{
+    margin-bottom: 20px;
     font-weight: 700;
-    font-size: 35px;
 }
 
-.pergunta{
-   font-weight: 500;
-   font-size: 24px;
+main .container .conteudo .lista-de-perguntas{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 90%;
 }
+
+main .container .conteudo .lista-de-perguntas .item{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+.seta-fechada{
+    background-image: url(../img/seta\ fechada.png);
+    background-repeat: no-repeat;
+    background-position: top 20px right 5px;
+}
+.seta-aberta{
+    background-image: url(../img/seta\ aberta.png);
+    background-repeat: no-repeat;
+    background-position: top 20px right 5px;
+}
+
+main .container .conteudo .lista-de-perguntas .item:last-child{
+    border-bottom: none;
+}
+
+main .container .conteudo .lista-de-perguntas .item .pergunta{
+    padding-right: 30px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+main .container .conteudo .lista-de-perguntas .item .pergunta:hover{
+    color: #f47c57;
+}
+
 
