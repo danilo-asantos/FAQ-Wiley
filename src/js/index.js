@@ -49,8 +49,6 @@ function mostrarRespostaEsconderOutras(resposta){
 
 function mostrarSetaAberta(resposta){
     perguntas[resposta].classList.replace ('seta-fechada', 'seta-aberta')
-    perguntas[resposta].classList.add ('ativo')
-    console.log(perguntas[resposta].classList)
 }
 
 function esconderSetaAberta(resposta){
